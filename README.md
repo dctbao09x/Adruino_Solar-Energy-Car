@@ -92,8 +92,8 @@ File `main.h` chứa tất cả các hằng số định nghĩa cho chân I/O v�
 
 \`\`\`cpp
 // Định nghĩa các chân điều khiển động cơ
-#define TOC_DO_CHAY 200    // Tốc độ tiến (0-255)
-#define TOC_DO_LUI 150     // Tốc độ lùi (0-255)
+- #define TOC_DO_CHAY 200
+- #define TOC_DO_LUI 150
 
 // Định nghĩa chân cảm biến
 #define NGUONG_CAN 20      // Khoảng cách an toàn (cm)
@@ -120,7 +120,7 @@ File `main.h` chứa tất cả các hằng số định nghĩa cho chân I/O v�
 
 3. **Thiết lập ngẫu nhiên:**
    \`\`\`cpp
-   randomSeed(analogRead(A0));  // Khởi tạo seed ngẫu nhiên từ chân analog
+   randomSeed(analogRead(A0))
    \`\`\`
    Điều này đảm bảo robot có hành vi không lặp lại mỗi lần khởi động, sử dụng `setup()` để cài đặt tính ngẫu nhiên từ nhiễu điện của chân analog A0.
 
